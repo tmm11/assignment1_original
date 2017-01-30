@@ -1,0 +1,142 @@
+      
+    $bgfColor: white;
+    $bodyF: 20px Montserrat, sans-serif;
+    $bgc: darkcyan;
+    $bodyText:16px;
+    $bt3: black; 
+    $bgc3: #474e5d;
+    $bgc4: burlywood ;
+
+%mandc{
+    font-family: sans-serif;
+    margin: auto;
+    
+    }                     //playing with extend
+
+ @mixin pad{
+        padding-top: 15px ;
+        padding-bottom: 15px;
+        
+    }
+
+@mixin bgcolors($bgfColor){
+    color: $bgfColor;
+}
+
+html {
+    background-color: #008b8b;
+}
+
+body {
+    font: $bodyF;
+    line-height: 1.8;
+    color: #f5f6f7;
+    p {
+        font-size: $bodyText;
+    }
+    
+    .sassPurpose{
+    @extend %mandc;
+    @include bgcolors($bgfColor) 
+    font-weight: 600;
+    padding-bottom: 20px;
+    }                                 // extend used 
+    
+    .margin {
+        margin-bottom: 45px;
+    }
+    
+    
+    
+    .bg-1 {
+        
+        background-color: darken($bgc, 10%); //sass funtion with darken
+        
+    }
+    .bg-2 {
+        background-color: $bgc3;     //dark blue
+       @include bgcolors($bgfColor)    
+    }
+    .bg-3 {
+        background-color: darken($bgc4, 50%);     //white
+        @include bgcolors($bt3);
+    }
+    .bg-4 {
+        background-color: #2f2f2f; //black grey
+        @include bgcolors($bgfColor) 
+    }
+    
+   
+    
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .navbar {
+        @include pad;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 3px;
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        
+        }//end hover
+    } // nested nav bar classes
+} //body end 
+
+
+// animations below
+      
+      
+    img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:transform .8s ease-in-out;
+      &:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+ }
+}//nested hover
+      
+      #scale { -webkit-transition: all .2s ease-in-out;  
+&:hover { -webkit-transform: scale(2.1); color:darkorange; }
+      
+}// end scale
+      #bounce:hover {
+	animation: bounce 1s;
+}
+      
+      @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+#div1 {
+    -moz-transition:color 8.1s ease-in;
+    -o-transition:color 8.1s ease-in;
+    -webkit-transition:color 8.1s ease-in;
+    background:#2f2f2f;}
+    #div1:hover{
+    transition: 2.1s ease-in-out;
+    background:black;
+
+}
+
+
+
+
+

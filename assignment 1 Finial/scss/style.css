@@ -1,0 +1,104 @@
+/* line 9, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+body .sassPurpose {
+  font-family: sans-serif;
+  margin: auto; }
+
+/* line 16, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+html {
+  background-color: #008b8b; }
+
+/* line 20, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7; }
+  /* line 24, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body p {
+    font-size: 16px; }
+  /* line 28, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .sassPurpose {
+    color: darkcyan;
+    font-weight: 600;
+    padding-bottom: 20px; }
+  /* line 35, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .margin {
+    margin-bottom: 45px; }
+  /* line 38, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .bg-1 {
+    background-color: #005858;
+    color: white; }
+  /* line 43, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .bg-2 {
+    background-color: #474e5d;
+    color: white; }
+  /* line 47, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .bg-3 {
+    background-color: burlywood;
+    color: black; }
+  /* line 51, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .bg-4 {
+    background-color: #2f2f2f;
+    color: white; }
+  /* line 55, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+  /* line 59, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  body .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 3px; }
+    /* line 67, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+    body .navbar .navbar-nav li a:hover {
+      color: #1abc9c !important; }
+
+/* line 78, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out; }
+  /* line 82, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+/* line 88, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+#scale {
+  -webkit-transition: all .2s ease-in-out; }
+  /* line 89, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+  #scale:hover {
+    -webkit-transform: scale(2.1);
+    color: darkorange; }
+
+/* line 92, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+#bounce:hover {
+  animation: bounce 1s; }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+/* line 112, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+#div1 {
+  -moz-transition: color 8.1s ease-in;
+  -o-transition: color 8.1s ease-in;
+  -webkit-transition: color 8.1s ease-in;
+  background: #2f2f2f; }
+
+/* line 117, /Users/tommalason/Desktop/assignment 1/scss/style.scss */
+#div1:hover {
+  transition: 2.1s ease-in-out;
+  background: black; }
+
+/*# sourceMappingURL=style.css.map */
