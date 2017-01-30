@@ -1,0 +1,104 @@
+      
+
+      
+
+      
+html{background-color: #008b8b;}
+  body {
+    
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: darkcyan; /* Green */
+      color: white;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: white;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: black;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: white;
+  }
+  
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 3px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  
+  
+  
+/*      animations below  */
+      
+      
+    img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition:transform .8s ease-in-out;}
+      img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+      
+      #scale { -webkit-transition: all .2s ease-in-out;  }
+#scale:hover { -webkit-transform: scale(2.1); color:darkorange; }
+      
+    
+      #bounce:hover {
+	animation: bounce 1s;
+}
+      
+      @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+#div1 {
+    -moz-transition:color 8.1s ease-in;
+    -o-transition:color 8.1s ease-in;
+    -webkit-transition:color 8.1s ease-in;
+    background:#2f2f2f;
+}
+
+
+#div1:hover{
+    transition: 2.1s ease-in-out;
+    background:black;
+}
+
+
+
+
+
+
