@@ -1,0 +1,89 @@
+html {
+  background-color: #008b8b; }
+
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7; }
+  body p {
+    font-size: 16px; }
+  body .margin {
+    margin-bottom: 45px; }
+  body .bg-1 {
+    background-color: darkcyan;
+    color: white; }
+  body .bg-2 {
+    background-color: #474e5d;
+    color: white; }
+  body .bg-3 {
+    background-color: #ffffff;
+    color: black; }
+  body .bg-4 {
+    background-color: #2f2f2f;
+    color: white; }
+  body .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+  body .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 3px; }
+    body .navbar .navbar-nav li a:hover {
+      color: #1abc9c !important; }
+
+img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+  transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out; }
+  img:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+#scale {
+  -webkit-transition: all .2s ease-in-out; }
+  #scale:hover {
+    -webkit-transform: scale(2.1);
+    color: darkorange; }
+
+#bounce:hover {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+
+#div1 {
+  -moz-transition: color 8.1s ease-in;
+  -o-transition: color 8.1s ease-in;
+  -webkit-transition: color 8.1s ease-in;
+  background: #2f2f2f; }
+
+#div1:hover {
+  transition: 2.1s ease-in-out;
+  background: black; }
